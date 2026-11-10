@@ -18,6 +18,8 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Validate app source and assets
         run: npm run check
+      - name: Build web assets
+        run: npm run build
       - name: Build AIT bundle
         run: npm run ait:build
       - name: Assert AIT exists
